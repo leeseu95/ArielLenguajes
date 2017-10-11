@@ -5,7 +5,7 @@
 divisibleMin = foldr1 lcm [1..20]
 
 --Problema 2
-getPrime = (filter (\x -> (getFactors x)) == []) [2..]) !! (10001-1)
+getPrime = (filter (\x -> (getFactors x) == []) [2..]) !! (10001-1)
 
 getFactors x = [ y | y <- [1..rootX], mod x y == 0, y /=x, y /= 1]
     where rootX = floor ( sqrt (fromIntegral x))
